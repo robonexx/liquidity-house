@@ -1,8 +1,10 @@
 .lh {
+    position: relative;
     display: flex;
     align-items: center;
     max-height: 22px;
     gap: 10px;
+    
 
     :nth-child(2) {
     margin-bottom: 34px;
@@ -44,11 +46,11 @@
 
 
 
-.logo {
+.logo-desktop {
 position: relative; 
 max-height: 22px;
 
-.svg {
+.svg-desktop {
     width: 90px;
     position: relative;
     @media (min-width: 768px) {
@@ -70,4 +72,15 @@ max-height: 22px;
    @media (min-width:1200px) {
     max-height: 64px;
    }
+}
+
+.logo2-desktop {
+    position: absolute;
+    left: 23.6%;
+    bottom: 8%;
+    z-index: 1;
+
+    > svg {
+        position: relative;
+    }
 }
