@@ -1,5 +1,3 @@
-'use clien';
-
 import { useState, useEffect } from 'react';
 
 interface MediaQuery {

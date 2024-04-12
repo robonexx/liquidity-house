@@ -8,9 +8,9 @@ const Logo2Desktop = () => {
   useEffect(() => {
     const timeout = setTimeout(() => {
       setIsVisible(false);
-    }, 3400); // Set the delay in milliseconds
+    }, 3400);
     return () => clearTimeout(timeout);
-  }, []); // Runs only once on component mount
+  }, []); 
   return (
     <AnimatePresence>
       {isVisible && (

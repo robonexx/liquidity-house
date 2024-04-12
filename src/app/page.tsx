@@ -1,12 +1,14 @@
-import Image from 'next/image';
+'use client'
 import styles from './page.module.scss';
-import LiquidityHouse from '@/components/LiquidityHouse';
+import LiquidityHouse2 from '@/components/LiquidityHouse2';
+import useMediaQuery from '@/utils/useMediaQuery';
 
 export default function Home() {
+  const {isDesktop} = useMediaQuery()
   return (
     <main className={styles.main}>
       <section>
-        <LiquidityHouse />
+        <LiquidityHouse2 />
       </section>
     </main>
   );
