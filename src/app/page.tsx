@@ -1,15 +1,14 @@
-'use client'
+'use client';
+import LiquidityHouse from '@/components/LiquidityHouse';
 import styles from './page.module.scss';
 import LiquidityHouse2 from '@/components/LiquidityHouse2';
 import useMediaQuery from '@/utils/useMediaQuery';
 
 export default function Home() {
-  const {isDesktop} = useMediaQuery()
+  const { isDesktop } = useMediaQuery();
   return (
     <main className={styles.main}>
-      <section>
-        <LiquidityHouse2 />
-      </section>
+      <section>{isDesktop ? <LiquidityHouse2 /> : <LiquidityHouse />}</section>
     </main>
   );
 }
