@@ -21,7 +21,7 @@ const LiquidityHouse2 = () => {
         <motion.h2
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 4 }}
+          transition={{ duration: 0.6, delay: 4, }}
         >
           is
         </motion.h2>

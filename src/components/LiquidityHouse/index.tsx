@@ -8,8 +8,8 @@ const LiquidityHouse = () => {
   return (
     <div className={styles.lh}>
       <motion.h2
-        initial={{ opacity: 0, x: -50 }}
-        animate={{ opacity: 1, x: 0 }}
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.4, delay: 0 }}
       >
         The
