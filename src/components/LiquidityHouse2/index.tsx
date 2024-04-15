@@ -11,8 +11,8 @@ const LiquidityHouse2 = () => {
       <>
         <Logo2Desktop />
         <motion.h2
-          initial={{ opacity: 0, x: -50 }}
-          animate={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4, delay: 2.6 }}
         >
           The
@@ -23,7 +23,21 @@ const LiquidityHouse2 = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 4 }}
         >
-          is being built.
+          is
+        </motion.h2>
+        <motion.h2
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 4.2 }}
+        >
+          being
+        </motion.h2>
+        <motion.h2
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 4.4 }}
+        >
+          built.
         </motion.h2>
       </>
     </div>
