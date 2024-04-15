@@ -13,7 +13,13 @@ const LiquidityHouse2 = () => {
         <motion.h2
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4, delay: 2.6 }}
+          transition={{
+            duration: 0.6,
+            delay: 2.5,
+            ease: 'easeOut',
+            type: 'spring',
+            bounce: 0.25,
+          }}
         >
           The
         </motion.h2>{' '}
@@ -21,21 +27,39 @@ const LiquidityHouse2 = () => {
         <motion.h2
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 4, }}
+          transition={{
+            duration: 0.6,
+            delay: 3.6,
+            ease: 'easeOut',
+            type: 'spring',
+            bounce: 0.25,
+          }}
         >
           is
         </motion.h2>
         <motion.h2
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 4.2 }}
+          transition={{
+            duration: 0.6,
+            delay: 3.8,
+            ease: 'easeOut',
+            type: 'spring',
+            bounce: 0.25,
+          }}
         >
           being
         </motion.h2>
         <motion.h2
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 4.4 }}
+          transition={{
+            duration: 0.6,
+            delay: 4,
+            ease: 'easeOut',
+            type: 'spring',
+            bounce: 0.25,
+          }}
         >
           built.
         </motion.h2>

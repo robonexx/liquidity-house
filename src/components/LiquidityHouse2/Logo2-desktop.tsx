@@ -10,14 +10,14 @@ const Logo2Desktop = () => {
       setIsVisible(false);
     }, 3400);
     return () => clearTimeout(timeout);
-  }, []); 
+  }, []);
   return (
     <AnimatePresence>
       {isVisible && (
         <motion.div
           className={styles['logo2-desktop']}
           initial={{ x: 180, opacity: 0 }}
-          animate={{ x: [180, 180, 0], opacity: 1 }}
+          animate={{ x: [180, 180, 180, -2, 0], opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{
             duration: 2,
@@ -25,7 +25,8 @@ const Logo2Desktop = () => {
           }}
         >
           <motion.svg
-           width="53" height="51"
+            width='53'
+            height='51'
             viewBox='0 0 52 51'
             fill='none'
             xmlns='http://www.w3.org/2000/svg'
@@ -34,8 +35,9 @@ const Logo2Desktop = () => {
             exit={{ opacity: 0 }}
             transition={{
               type: 'spring',
-              stiffness: 100,
-              damping: 40,
+              stiffness: 400,
+              damping: 200,
+              bounce: 0.3,
               duration: 1,
               delay: 0,
             }}
@@ -58,6 +60,7 @@ const Logo2Desktop = () => {
                 type: 'spring',
                 stiffness: 100,
                 damping: 40,
+                bounce: 0.25,
                 duration: 1,
                 delay: 1,
               }}
@@ -71,7 +74,7 @@ const Logo2Desktop = () => {
                 y2='24.5011'
                 gradientUnits='userSpaceOnUse'
               >
-                  <stop stop-color='#2A978B' />
+                <stop stop-color='#2A978B' />
                 <stop offset='1' stop-color='#35ECA7' />
               </linearGradient>
             </defs>
@@ -83,5 +86,3 @@ const Logo2Desktop = () => {
 };
 
 export default Logo2Desktop;
-
-
