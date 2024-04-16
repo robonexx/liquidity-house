@@ -6,6 +6,7 @@
   background: linear-gradient(to bottom, #1B302F, #16181D);
 
   section {
+    max-height: fit-content;
     margin-bottom: 300px;
 
     @media (min-width: 768px) {
@@ -17,3 +18,5 @@
      }
   }
 }
+
+
